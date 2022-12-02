@@ -2,7 +2,7 @@
 var solution1 = data.Select(x =>
 {
     var (a, b) = x;
-    return a + 1 + (b - a + 4) % 3 * 3;
+    return b + 1 + (b - a + 4) % 3 * 3;
 }).Sum();
 
 var solution2 = data.Select(x =>
