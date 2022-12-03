@@ -1,4 +1,4 @@
-﻿var data = File.ReadLines("Input.txt").Select(x => (x[0] - 'A',x[2] - 'X')).ToArray();
+﻿var data = File.ReadLines("Input.txt").Select(x => (x[0] - 'A', x[2] - 'X')).ToArray();
 var solution1 = data.Select(x =>
 {
     var (a, b) = x;
