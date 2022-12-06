@@ -50,6 +50,6 @@ var answer1 = new string(containers.Select(i => i.Peek()).ToArray());
 var answer2 = new string(containers2.Select(i => i.Peek()).ToArray());
 
 Console.WriteLine($"Answer1: {answer1}");
-Console.WriteLine($"Answer1: {answer2}");
+Console.WriteLine($"Answer2: {answer2}");
 
 internal record struct Operation(int Num, int FromStack, int ToStack);
