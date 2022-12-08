@@ -69,11 +69,8 @@ internal class Node
             child.GetAnswer2Values(matching, requiredSpace);
     }
   
-    public int GetDirectorySize()
-    {
-        return Children.Values.Sum(i => i.GetDirectorySize()) + FileSize;
-    }
-    
+    public int GetDirectorySize() => Children.Values.Sum(i => i.GetDirectorySize()) + FileSize;
+
     public Node(Node? parentNode = null)
     {
         ParentNode = parentNode;
